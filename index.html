@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UMKM Kita</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Tentang Kami</a></li>
+          <li><a href="#products">Produk</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <h1>Selamat Datang di UMKM Kita</h1>
+        <p>Kami menyediakan produk lokal berkualitas untuk kebutuhan Anda</p>
+      </div>
+    </header>
+
+    <!-- Tentang Kami Section -->
+    <section id="about">
+      <h2>Tentang Kami</h2>
+      <p>
+        UMKM Kita adalah usaha mikro kecil yang bergerak dalam produksi dan
+        penjualan produk lokal terbaik. Kami berkomitmen untuk menyediakan
+        produk berkualitas yang mendukung ekonomi lokal dan kesejahteraan
+        masyarakat.
+      </p>
+    </section>
+
+    <!-- Produk Section -->
+    <section id="products">
+      <h2>Produk Kami</h2>
+      <div class="product-grid">
+        <div class="product">
+          <jpg src="ayam.jpg" alt="Produk 1" />
+          <h3>ayam kuning</h3>
+          <p>ini merupakan ayam yang di masak utuh.</p>
+        </div>
+        <div class="product">
+          <img src="foto_produk_2.jpg" alt="Produk 2" />
+          <h3>Produk 2</h3>
+          <p>Deskripsi singkat tentang produk 2.</p>
+        </div>
+        <div class="product">
+          <img src="foto_produk_3.jpg" alt="Produk 3" />
+          <h3>Produk 3</h3>
+          <p>Deskripsi singkat tentang produk 3.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="contact">
+      <h2>Kontak Kami</h2>
+      <p>Email: info@umkmkita.com</p>
+      <p>Telepon: +62 123 4567 890</p>
+      <form>
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Pesan:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+
+    <script src="script.js">
+            // Untuk keperluan form submission dan validasi
+      document.querySelector("form").addEventListener("submit", function(event) {
+          event.preventDefault();
+          alert("Terima kasih telah menghubungi kami!");
+      });
+    </script>
+  </body>
+</html>
